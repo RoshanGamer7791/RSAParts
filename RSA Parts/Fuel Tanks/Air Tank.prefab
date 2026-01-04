@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 9185718412258651831}
   - component: {fileID: 5360091776078153125}
   - component: {fileID: 2074914987631835494}
+  - component: {fileID: 4312314800445373310}
   m_Layer: 8
   m_Name: Air Tank
   m_TagString: Untagged
@@ -38,13 +39,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6025496177165280394}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6025496177165280502
 MonoBehaviour:
@@ -79,79 +80,11 @@ MonoBehaviour:
   variablesModule: {fileID: 6025496177165280511}
   variants:
   - variants:
-    - changes:
-      - name: width_original
-        type: 0
-        numberValue: 1
-        toggleValue: 0
-        textValue: 
-      - name: height
-        type: 0
-        numberValue: 4
-        toggleValue: 0
-        textValue: 
+    - changes: []
       tags:
       - tag: {fileID: 11400000, guid: b77afe06bc431ac4093ab85cd7eff447, type: 2}
         priority: 0
-      cost: 0
-    - changes:
-      - name: width_original
-        type: 0
-        numberValue: 1
-        toggleValue: 0
-        textValue: 
-      - name: height
-        type: 0
-        numberValue: 2
-        toggleValue: 0
-        textValue: 
-      tags:
-      - tag: {fileID: 11400000, guid: b77afe06bc431ac4093ab85cd7eff447, type: 2}
-        priority: 0
-      cost: 0
-    - changes:
-      - name: width_original
-        type: 0
-        numberValue: 2
-        toggleValue: 0
-        textValue: 
-      - name: height
-        type: 0
-        numberValue: 2
-        toggleValue: 0
-        textValue: 
-      tags:
-      - tag: {fileID: 11400000, guid: b77afe06bc431ac4093ab85cd7eff447, type: 2}
-        priority: 0
-      cost: 0
-    - changes:
-      - name: width_original
-        type: 0
-        numberValue: 3
-        toggleValue: 0
-        textValue: 
-      - name: height
-        type: 0
-        numberValue: 4
-        toggleValue: 0
-        textValue: 
-      tags:
-      - tag: {fileID: 11400000, guid: b77afe06bc431ac4093ab85cd7eff447, type: 2}
-        priority: 0
-      cost: 0
-    - changes:
-      - name: width_original
-        type: 0
-        numberValue: 3
-        toggleValue: 0
-        textValue: 
-      - name: height
-        type: 0
-        numberValue: 8
-        toggleValue: 0
-        textValue: 
-      tags:
-      - tag: {fileID: 11400000, guid: b77afe06bc431ac4093ab85cd7eff447, type: 2}
+      - tag: {fileID: 11400000, guid: 46a8c10d3bbd74b41949261737262073, type: 2}
         priority: 0
       cost: 0
     tags: []
@@ -655,6 +588,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -688,3 +624,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6025496177165280394}
   m_Mesh: {fileID: 0}
+--- !u!114 &4312314800445373310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6025496177165280394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1118b079a948f1aa60a90b1197c957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - priority: 0
+    label:
+      TranslatableName: Width_a
+      plainText: 1
+    variableType: 0
+    floatReference:
+      variableName: width_a
+      referenceToVariables: {fileID: 6025496177165280511}
+      localValue: 0
+    boolReference:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    stringReference:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 
+    floatDrawType: 1
+    stringDrawType: 0
+    units: m
+    minValue: 0.1
+    maxValue: 16
+  - priority: -1
+    label:
+      TranslatableName: Width_b
+      plainText: 1
+    variableType: 0
+    floatReference:
+      variableName: width_b
+      referenceToVariables: {fileID: 6025496177165280511}
+      localValue: 0
+    boolReference:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    stringReference:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 
+    floatDrawType: 1
+    stringDrawType: 0
+    units: m
+    minValue: 0.1
+    maxValue: 16
+  - priority: -2
+    label:
+      TranslatableName: Height
+      plainText: 1
+    variableType: 0
+    floatReference:
+      variableName: height
+      referenceToVariables: {fileID: 6025496177165280511}
+      localValue: 0
+    boolReference:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 0
+    stringReference:
+      variableName: 
+      referenceToVariables: {fileID: 0}
+      localValue: 
+    floatDrawType: 1
+    stringDrawType: 0
+    units: m
+    minValue: 0.1
+    maxValue: 16

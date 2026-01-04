@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 9185718412258651831}
   - component: {fileID: 5360091776078153125}
   - component: {fileID: 2074914987631835494}
-  - component: {fileID: -4881305531213167077}
+  - component: {fileID: 2343064513266790622}
   m_Layer: 8
-  m_Name: Steam Tank
+  m_Name: Procedural Fuel Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,11 +60,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayName:
-    TranslatableName: Steam Tank
+    TranslatableName: Procedural Fuel Tank
     plainText: 1
   description:
-    TranslatableName: Steam for the steam engines
-    plainText: 1
+    TranslatableName: Fuel_Tank_Description
+    plainText: 0
   mass:
     variables: {fileID: 6025496177165280511}
     input: mass
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53592ab8d2400374095cd89a7c0ce93a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: {fileID: 11400000, guid: 78070e24251f7d842a68a50e2038e43d, type: 2}
+  resourceType: {fileID: 11400000, guid: 228bca42e456ecb4cb87cdd837fa81fe, type: 2}
   wetMass:
     variableName: mass_wet
     referenceToVariables: {fileID: 6025496177165280511}
@@ -624,7 +624,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6025496177165280394}
   m_Mesh: {fileID: 0}
---- !u!114 &-4881305531213167077
+--- !u!114 &2343064513266790622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
